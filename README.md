@@ -1,4 +1,4 @@
-# Code-10-Designs-Challenge-by-A.-Twarog
+# Code-10-Web-Designs-Challenge-by-A.-Twarog
 A Coding session to reply to the [Figma Challenge by Adrian Twarog Youtube Channel](https://youtu.be/lf_vL-TNOEk)
 
 Designs are:
