@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('img_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.icon:before {
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  text-align: center;
+  display: block;
+  color: white;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.main_wrapper {
+  padding: 2rem 4rem;
+  min-height: 100%;
+}
+
+/*----------  Contacts  ----------*/
+
+.contacts_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.contacts_wrapper a {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.contacts_wrapper a:hover {
+  color: #fff;
+}
+
+.contacts_wrapper a:first-child {
+  font-size: 2.75rem;
+}
+
+.contacts_wrapper a:last-child {
+  text-decoration: underline;
+}
+
+/*----------  Description  ----------*/
+
+.description_wrapper {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: start;
+}
+
+.description_wrapper h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #29415e;
+}
+
+/*----------  Name  ----------*/
+
+.name_wrapper {
+  width: max-content;
+  position: relative;
+  left: -6rem;
+  top: 3rem;
+}
+
+.name_wrapper h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  padding: 0.5rem 4rem 0.5rem 10rem;
+  background-color: #fff;
+}
+
+/*----------  Skills  ----------*/
+
+.skills_wrapper {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -10rem;
+  right: 12rem;
+  margin-left: auto;
+}
+
+.skills_wrapper h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #29415e;
+}
+
+.skills_wrapper ul li a {
+  color: #29415e;
+  font-weight: 400;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.skills_wrapper ul li a:hover {
+  color: #846e57;
+}
+
+/*----------  Link  ----------*/
+
+.link_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.link_wrapper a {
+  background-color: #556272;
+  font-weight: 300;
+  color: #fff;
+  font-size: 3.187rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+}
+
+.link_wrapper a:first-child {
+  margin: 1rem 0;
+  position: relative;
+  top: -19rem;
+  left: 26rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.link_wrapper a:first-child:hover {
+  color: #000;
+  background-color: #fff;
+  z-index: 99;
+}
+.link_wrapper a:last-child {
+  position: relative;
+  top: -21rem;
+  left: 16rem;
+  z-index: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.link_wrapper a:last-child:hover {
+  color: #000;
+  background-color: #fff;
+  z-index: 99;
+}
+
+/*=============================================
+=            Media Query            =
+=============================================*/
+
+@media (max-width: 1366px) {
+  .main_wrapper {
+    padding: 2rem;
+  }
+  .contacts_wrapper a {
+    font-size: 1rem;
+  }
+  .contacts_wrapper a:first-child {
+    font-size: 2rem;
+  }
+  .description_wrapper {
+    max-width: 530px;
+  }
+  .description_wrapper h3 {
+    font-size: 1.5rem;
+  }
+  .name_wrapper h1 {
+    font-size: 3rem;
+  }
+  .skills_wrapper h2 {
+    font-size: 2.5rem;
+  }
+  .skills_wrapper ul li a {
+    font-size: 1.5rem;
+  }
+  .link_wrapper a {
+    font-size: 2rem;
+  }
+  .link_wrapper a:first-child {
+    top: -14rem;
+    left: 17rem;
+  }
+  .link_wrapper a:last-child {
+    top: -16rem;
+    left: 10rem;
+  }
+}
+@media (max-width: 1024px) {
+  .skills_wrapper {
+    right: 9rem;
+  }
+}
+@media (max-width: 992px) {
+  .description_wrapper {
+    margin-top: 2rem;
+  }
+  .name_wrapper h1 {
+    padding: 0.5rem 3rem 0.5rem 7rem;
+  }
+  .skills_wrapper {
+    right: 2rem;
+    top: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .description_wrapper {
+    max-width: 400px;
+  }
+  .description_wrapper h3 {
+    font-size: 1.3rem;
+  }
+  .skills_wrapper {
+    right: 75%;
+    top: 12rem;
+  }
+  .link_wrapper {
+    flex-direction: row;
+  }
+  .link_wrapper a:first-child {
+    left: 0;
+  }
+  .link_wrapper a:last-child {
+    left: 2rem;
+    top: -13rem;
+    height: max-content;
+  }
+}
+@media (max-width: 600px) {
+  .contacts_wrapper a:first-child {
+    font-size: 1.5rem;
+  }
+  .contacts_wrapper a:last-child {
+    text-decoration: underline;
+  }
+  .description_wrapper h3 {
+    font-size: 1rem;
+  }
+  .name_wrapper h1 {
+    font-size: 1.9rem;
+  }
+  .link_wrapper a {
+    font-size: 1.1rem;
+  }
+  .link_wrapper a:first-child {
+    top: -10rem;
+  }
+  .link_wrapper a:last-child {
+    top: -9rem;
+  }
+  .skills_wrapper {
+    right: 67%;
+  }
+  .skills_wrapper h2 {
+    font-size: 2rem;
+  }
+  .skills_wrapper ul li a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 425px) {
+  .description_wrapper h3 {
+    font-size: 0.8rem;
+  }
+  .name_wrapper h1 {
+    font-size: 1.5rem;
+  }
+  .link_wrapper a {
+    font-size: 0.8rem;
+  }
+  .link_wrapper a:first-child {
+    top: -9rem;
+  }
+  .link_wrapper a:last-child {
+    top: -8rem;
+  }
+  .skills_wrapper h2 {
+    font-size: 1.8rem;
+  }
+  .skills_wrapper ul li a {
+    font-size: 1rem;
+  }
+  .skills_wrapper {
+    top: 9rem;
+  }
+}
+@media (max-width: 320px) {
+  .main_wrapper {
+    padding: 1rem;
+  }
+  .contacts_wrapper a:first-child {
+    font-size: 1rem;
+  }
+  .contacts_wrapper a {
+    font-size: 0.6rem;
+  }
+  .description_wrapper h3 {
+    font-size: 0.6rem;
+  }
+  .name_wrapper {
+    top: 1rem;
+  }
+  .link_wrapper a:first-child {
+    top: -11rem;
+  }
+  .link_wrapper a:last-child {
+    top: -10rem;
+  }
+  .skills_wrapper {
+    top: 5rem;
+  }
+  .skills_wrapper h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/*=====  End of Media Query  ======*/

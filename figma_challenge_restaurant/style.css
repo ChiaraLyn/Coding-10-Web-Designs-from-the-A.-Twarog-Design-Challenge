@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url('img_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main_wrapper {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo i,
+.logo h1 {
+  color: #026e78;
+  font-size: 3rem;
+}
+
+.logo h1 {
+  margin-left: 2rem;
+}
+
+.titles h2 {
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+nav ul li {
+  width: 100%;
+  background-color: #2d99a4;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  background-color: #0e727b;
+}
+
+.link a {
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.active {
+  background-color: white;
+}
+
+.active a {
+  color: #2d99a4;
+}
+
+.action {
+  background-color: #0e727b;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.action:hover {
+  background-color: #2d99a4;
+}
+
+.central {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.link_central {
+  color: #0e727b;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.link_central:hover {
+  color: #ffffff;
+  background-color: #0e727b;
+}
+
+.link_central_view {
+  color: #ffffff;
+  background-color: #2d99a4;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.link_central_view:hover {
+  color: #2d99a4;
+  background-color: #ffffff;
+}
+
+.central h1 {
+  padding: 2rem;
+  color: white;
+  font-weight: 300;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.central a {
+  font-weight: 300;
+  padding: 1rem 3rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+/*=============================================
+=            Media Query            =
+=============================================*/
+
+@media screen and (max-width: 1280px) {
+  .link a {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main_wrapper {
+    width: 100%;
+  }
+  nav ul li {
+    padding: 1rem;
+  }
+
+  .central {
+    position: absolute;
+    top: 40%;
+  }
+  .links {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .link a {
+    font-size: 1rem;
+  }
+  .main_wrapper {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .link a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .central {
+    top: 60%;
+  }
+  .link a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .central {
+    top: 57%;
+  }
+  .titles h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .central {
+    top: 65%;
+  }
+  .central h1 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .central a {
+    padding: 0.5rem 2rem;
+  }
+  .titles h2 {
+    font-size: 1.4rem;
+  }
+  .logo i,
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .link a {
+    font-size: 0.8rem;
+  }
+  .link_central,
+  .link_central_view {
+    font-size: 1rem;
+  }
+  nav ul {
+    margin-top: 1rem;
+  }
+}
+
+/*=====  End of Media Query  ======*/

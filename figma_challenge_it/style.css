@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  color: #007ff4;
+}
+
+.main_wrapper {
+  padding: 3rem 4rem;
+}
+
+/*----------  Header  ----------*/
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main_titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo i {
+  font-size: 3rem;
+}
+
+.titles {
+  padding-left: 1rem;
+}
+
+.titles h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.titles a {
+  color: #007ff4;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.titles a:hover {
+  color: #000;
+}
+
+.main_contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.main_contact h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul li a {
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+ul li:first-child a {
+  padding: 0.5rem 0 0 0;
+}
+
+ul li a:hover {
+  color: #007ff4;
+}
+
+/*----------  Picture  ----------*/
+
+picture {
+  max-width: 100%;
+  margin-left: -4rem;
+}
+
+picture img {
+  margin-top: 3rem;
+  object-fit: contain;
+  max-width: 100vw;
+}
+
+/*----------  Cards  ----------*/
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.card img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.125rem;
+  text-align: left;
+}
+
+/*----------  Footer  ----------*/
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer a {
+  background-color: #007ff4;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 400;
+  font-size: 2.25rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+footer a:hover {
+  background-color: #000;
+}
+
+/*=============================================
+=            Media Query            =
+=============================================*/
+
+@media screen and (min-width: 1440px) {
+  picture {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  picture img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+  }
+  .main_titles {
+    margin-bottom: 2rem;
+  }
+  .main_contact {
+    align-items: center;
+  }
+  .main_contact h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main_wrapper {
+    padding: 2rem;
+  }
+  .titles h1 {
+    font-size: 2rem;
+  }
+  .titles a {
+    font-size: 1.1rem;
+  }
+  ul li a {
+    font-size: 1.1rem;
+  }
+  .card h2 {
+    font-size: 2rem;
+  }
+  footer a {
+    font-size: 2rem;
+  }
+  picture {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  picture img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo i {
+    font-size: 2rem;
+  }
+  .titles h1 {
+    font-size: 1.5rem;
+  }
+  .titles a {
+    font-size: 0.8rem;
+  }
+  ul li a {
+    font-size: 1rem;
+  }
+  .card h2 {
+    font-size: 1.5rem;
+  }
+  footer a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titles h1 {
+    font-size: 1.3rem;
+  }
+  .titles a {
+    font-size: 0.8rem;
+  }
+  ul li a {
+    font-size: 0.8rem;
+  }
+  .card h2 {
+    font-size: 1.3rem;
+  }
+  footer a {
+    font-size: 1.3rem;
+  }
+}
+
+/*=====  End of Media Query  ======*/

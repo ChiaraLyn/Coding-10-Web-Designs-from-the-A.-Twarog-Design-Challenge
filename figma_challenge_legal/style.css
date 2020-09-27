@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding-right: 4rem;
+  height: 100vh;
+  /* it was min-height: 100vh*/
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.main_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.logo {
+  background-color: #fff;
+  border-radius: 100px;
+  color: black;
+  display: inline-flex;
+  font-size: 6rem;
+  align-items: center;
+  justify-content: center;
+  height: 181px;
+  width: 210px;
+  margin-right: 1rem;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.box {
+  background-color: #404040;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.box:hover {
+  background-color: #cccccc;
+}
+.box:hover .titles h2,
+.box:hover .titles p,
+.box:hover .fas {
+  color: #202020;
+}
+
+.head_box {
+  background-color: #202020;
+  margin-bottom: 3rem;
+}
+
+.head_box:hover {
+  background-color: #202020;
+}
+
+.titles {
+  width: 60%;
+}
+
+.titles h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.titles h3 {
+  color: #6f6f6f;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.titles h2 {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.titles p {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.fa-chevron-right {
+  font-size: 4rem;
+}
+
+aside {
+  height: 80%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*=============================================
+=            Media Query            =
+=============================================*/
+
+@media screen and (max-width: 1366px) {
+  .head_box {
+    margin-bottom: 1rem;
+  }
+  .titles h1 {
+    font-size: 3rem;
+  }
+  .titles h3 {
+    font-size: 1.6rem;
+  }
+  .titles h2 {
+    font-size: 1.6rem;
+  }
+  .titles p {
+    font-size: 1.2rem;
+  }
+  .logo {
+    height: 160px;
+    width: 196px;
+    font-size: 5rem;
+  }
+  .box {
+    padding: 1rem;
+  }
+  .fa-chevron-right {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .titles h1 {
+    font-size: 2.6rem;
+  }
+  .titles h3 {
+    font-size: 1.6rem;
+  }
+  aside {
+    width: 40%;
+  }
+  .logo {
+    height: 150px;
+    width: 176px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+    padding-right: 0;
+  }
+  main {
+    width: 100%;
+  }
+  .main_wrapper {
+    flex-direction: column;
+  }
+  .box {
+    margin-bottom: 1rem;
+  }
+  aside {
+    width: 90%;
+  }
+  .logo {
+    height: 130px;
+    width: 150px;
+    font-size: 3rem;
+  }
+  .titles h1 {
+    font-size: 3.6rem;
+  }
+  .titles h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .titles {
+    width: 80%;
+  }
+  .titles h1 {
+    font-size: 2.5rem;
+  }
+  .titles h3 {
+    font-size: 1.5rem;
+  }
+  .titles h2 {
+    font-size: 1.6rem;
+  }
+  .titles p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .titles {
+    width: 90%;
+  }
+  .titles h1 {
+    font-size: 2.2rem;
+  }
+  .titles h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .titles h1 {
+    font-size: 2rem;
+  }
+  .titles h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .box {
+    padding: 1rem;
+  }
+}
+
+/*=====  End of Media Query  ======*/

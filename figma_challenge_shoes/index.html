@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Shoes</title>
+</head>
+<body>
+
+  <div class="main_wrapper">
+
+    <div class="header">
+
+      <div class="hamburger">
+      <a href="#" class="head_title"><i class="fas fa-bars" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="central_header">
+        <i class="fas fa-shoe-prints head_title" aria-hidden="true"></i>
+        <h2 class="head_title noselect">Shoe are Us</h2>
+        <h5 class="noselect">Find the right fit for you</h5>
+      </div>
+
+      <div class="phone">
+      <a href="#" class="head_title"><i class="fas fa-phone" aria-hidden="true"></i></a>
+      </div>
+
+    </div>
+
+    <div class="carousel_wrapper">
+
+      <div class="slide fade" data-bg="#cb021c">
+        <img src="images/img1.jpg">
+        <h1 class="title noselect" data-color="#ffffff">Performance</h1>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="slide fade" data-bg="#ffffff">
+        <img src="images/img2.jpg">
+        <h1 class="title noselect" data-color="#40020E">Fashionality</h1>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="slide fade" data-bg="#ffffff">
+        <img src="images/img3.jpg">
+        <h1 class="title noselect" data-color="#40020E">SportsMax</h1>
+        <a href="#">Learn More</a>
+      </div>    
+      <div class="slide fade" data-bg="#E5EAF0">
+        <img src="images/img4.jpg">
+        <h1 class="title noselect" data-color="#EEC602">Graffity Rude</h1>
+        <a href="#">Learn More</a>
+      </div>    
+
+      <!-- next/previous arrow -->
+      <a class="arrow prev noselect" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="arrow next noselect" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dots_wrapper">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
