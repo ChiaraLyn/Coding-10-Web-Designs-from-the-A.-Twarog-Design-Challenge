@@ -9,7 +9,7 @@ Designs are:
 1. [Net Stream](https://github.com/ChiaraLyn/Coding-10-Web-Designs-from-the-A.-Twarog-Design-Challenge/tree/master/figma_challenge_netstream)
 1. [Newspaper](https://github.com/ChiaraLyn/Coding-10-Web-Designs-from-the-A.-Twarog-Design-Challenge/tree/master/figma_challenge_newspaper)
 1. [Portfolio](https://github.com/ChiaraLyn/Coding-10-Web-Designs-from-the-A.-Twarog-Design-Challenge/tree/master/figma_challenge_portfolio)
-1. [Restaurant]https://github.com/ChiaraLyn/Coding-10-Web-Designs-from-the-A.-Twarog-Design-Challenge/tree/master/figma_challenge_restaurant)
+1. [Restaurant](https://github.com/ChiaraLyn/Coding-10-Web-Designs-from-the-A.-Twarog-Design-Challenge/tree/master/figma_challenge_restaurant)
 1. [Shoes](https://github.com/ChiaraLyn/Coding-10-Web-Designs-from-the-A.-Twarog-Design-Challenge/tree/master/figma_challenge_shoes)
 1. [Tourism](https://github.com/ChiaraLyn/Coding-10-Web-Designs-from-the-A.-Twarog-Design-Challenge/tree/master/figma_challenge_tourism)
 
